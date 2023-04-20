@@ -23,13 +23,12 @@ class WelcomeScreen extends StatelessWidget {
         const SizedBox(
           height: 30,
         ),
-        OutlinedButton(
+        OutlinedButton.icon(
           onPressed: () {},
-          child: Text(
+          style: OutlinedButton.styleFrom(foregroundColor: Colors.purple[100]),
+          icon: Icon(Icons.arrow_right_alt),
+          label: Text(
             "Start Quiz",
-            style: TextStyle(
-              color: Colors.purple[100],
-            ),
           ),
         )
       ],
