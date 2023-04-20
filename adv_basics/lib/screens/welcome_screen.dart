@@ -9,7 +9,11 @@ class WelcomeScreen extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Image.asset(AppConfig.START_IMAGE, width: 300),
+        Image.asset(
+          AppConfig.START_IMAGE,
+          width: 300,
+          color: const Color.fromARGB(150, 255, 255, 255),
+        ),
         const SizedBox(
           height: 80,
         ),
@@ -26,8 +30,8 @@ class WelcomeScreen extends StatelessWidget {
         OutlinedButton.icon(
           onPressed: () {},
           style: OutlinedButton.styleFrom(foregroundColor: Colors.purple[100]),
-          icon: Icon(Icons.arrow_right_alt),
-          label: Text(
+          icon: const Icon(Icons.arrow_right_alt),
+          label: const Text(
             "Start Quiz",
           ),
         )
